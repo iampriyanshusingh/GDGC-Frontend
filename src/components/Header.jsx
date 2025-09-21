@@ -27,7 +27,7 @@ const Header = () => {
           <input
             type="text"
             placeholder="What are you looking for?"
-            className="flex-grow bg-transparent p-5 text-sm text-gray-700 placeholder-gray-500 focus:outline-none  w-[300px]"
+            className="flex-grow bg-transparent p-5 text-sm text-gray-700 placeholder-gray-900 focus:outline-none  w-[300px]"
           />
           <div className="relative flex items-center ml-2 py-2">
             <select className="bg-transparent pl-3 pr-6 text-sm text-black font-semibold focus:outline-none cursor-pointer appearance-none">

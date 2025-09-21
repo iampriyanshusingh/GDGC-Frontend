@@ -1,33 +1,39 @@
 import React, { useState } from "react";
+import photo1 from "../assets/photo1.webp";
+import photo2 from "../assets/photo2.webp";
+import photo3 from "../assets/photo3.webp";
+import photo4 from "../assets/photo4.webp";
+import photo5 from "../assets/photo5.webp";
+import photo6 from "../assets/photo6.webp";
 const imageData = [
   {
     id: 1,
-    url: "https://placehold.co/1200x675/d1fae5/34d399?text=Landing+Page",
+    url: photo1,
     alt: "Screenshot of a landing page design",
   },
   {
     id: 2,
-    url: "https://placehold.co/1200x675/e0e7ff/6366f1?text=Dashboard+UI",
+    url: photo2,
     alt: "Screenshot of a dashboard UI",
   },
   {
     id: 3,
-    url: "https://placehold.co/1200x675/fef3c7/f59e0b?text=Analytics",
+    url: photo3,
     alt: "Screenshot of an analytics page",
   },
   {
     id: 4,
-    url: "https://placehold.co/1200x675/fee2e2/ef4444?text=Mobile+App",
+    url: photo4,
     alt: "Screenshot of a mobile application",
   },
   {
     id: 5,
-    url: "https://placehold.co/1200x675/f3e8ff/a855f7?text=User+Profile",
+    url: photo5,
     alt: "Screenshot of a user profile screen",
   },
   {
     id: 6,
-    url: "https://placehold.co/1200x675/dbeafe/3b82f6?text=Settings",
+    url: photo6,
     alt: "Screenshot of a settings page",
   },
 ];
@@ -91,27 +97,27 @@ const GalleryGlimpse = () => {
         Gallery Glimpse✨
       </p>
       {/* Main Image Display */}
-      <div className="relative mb-4">
+      <div className="relative mb-4 shadow-xl">
         <div className="overflow-hidden rounded-lg shadow-lg">
           <img
             key={activeImage.id} // Add key to force re-render for transition
             src={activeImage.url}
             alt={activeImage.alt}
-            className="w-full aspect-[16/9] object-cover transition-opacity duration-500 ease-in-out opacity-100"
+            className="w-full object-contain transition-opacity duration-500 ease-in-out opacity-100"
           />
         </div>
 
         {/* Navigation Buttons */}
         <button
           onClick={handlePrev}
-          className="absolute top-1/2 left-3 transform -translate-y-1/2 bg-white/60 hover:bg-white/90 p-2 rounded-full shadow-md transition-all duration-300"
+          className="absolute top-1/2 left-3 transform -translate-y-1/2 bg-white/60 hover:bg-white/90 p-1 rounded-full shadow-md transition-all duration-300"
           aria-label="Previous image"
         >
           <ChevronLeftIcon />
         </button>
         <button
           onClick={handleNext}
-          className="absolute top-1/2 right-3 transform -translate-y-1/2 bg-white/60 hover:bg-white/90 p-2 rounded-full shadow-md transition-all duration-300"
+          className="absolute top-1/2 right-3 transform -translate-y-1/2 bg-white/60 hover:bg-white/90 p-1 rounded-full shadow-md transition-all duration-300"
           aria-label="Next image"
         >
           <ChevronRightIcon />
@@ -119,14 +125,14 @@ const GalleryGlimpse = () => {
       </div>
 
       {/* Thumbnails */}
-      <div className="flex justify-center space-x-2 p-2">
+      <div className="flex space-x-2 p-2">
         {imageData.map((image, index) => (
           <button
             key={image.id}
             onClick={() => setActiveIndex(index)}
-            className={`w-24 h-14 rounded-md overflow-hidden transition-all duration-300 border-2 ${
+            className={`w-24 h-16 rounded-md overflow-hidden transition-all duration-300 border-2 ${
               activeIndex === index
-                ? "border-pink-500 shadow-md"
+                ? "border-pink-500 border-3 shadow-md"
                 : "border-transparent hover:border-gray-300"
             }`}
           >
