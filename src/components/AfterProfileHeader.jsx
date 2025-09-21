@@ -3,9 +3,9 @@ import img from "../assets/img.webp";
 
 const AfterProfileHeader = () => {
   return (
-    <div className="sticky">
+    <div className="sticky mt-5">
       {/* Main image */}
-      <img src={img} alt="my photo" className="w-full h-auto" />
+      <img src={img} alt="my photo" className="h-auto ml-64 rounded-xl" />
 
       {/* Three circular icons in top right corner */}
       <div className="absolute top-4 right-4 flex flex-col space-y-3">
@@ -62,71 +62,39 @@ const AfterProfileHeader = () => {
       </div>
 
       {/* Text content after the photo */}
-      <div className="px-6 py-8 space-y-8">
-        {/* Description Section */}
-        <div className="space-y-4">
-          {/* Lightbulb icon and title */}
-          <div className="flex items-start space-x-3">
-            <div className="flex-shrink-0">
-              <div className="w-6 h-6 bg-yellow-100 rounded-full flex items-center justify-center">
-                <svg
-                  className="w-4 h-4 text-yellow-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <h2 className="text-lg font-semibold text-gray-900 mb-2">
-                AI SaaS Website Design
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                Clean, modern, and conversion-focused design for an automation
-                SaaS platform. Focused on{" "}
-                <span className="font-semibold">predictive analytics</span>,{" "}
-                <span className="font-semibold">workflow automation</span>, and{" "}
-                <span className="font-semibold">smart dashboards</span> to help
-                businesses scale faster.
-              </p>
-              <p className="text-gray-700 mt-2">
-                What's your take – more startup vibe or enterprise-ready? 🚀
-              </p>
-            </div>
-          </div>
-        </div>
+      <div className="px-6 py-8 ml-96 mt-7">
+        <p className="text-[20px]">
+          💡 <strong>AI SaaS Website Design</strong> Clean, modern, and
+          conversion-focused design for <br /> an{" "}
+          <strong>automation SaaS platform</strong>. Focused on{" "}
+          <strong>
+            predictive analytics, workflow <br />
+            automation, and smart dashboards
+          </strong>{" "}
+          to help businesses scale faster.
+        </p>
+        <p className="text-[21px]">
+          What’s your take —{" "}
+          <strong>more startup vibe or enterprise-ready</strong>? 🚀
+        </p>
 
         {/* Work Inquiries Section */}
-        <div className="space-y-4">
-          <div className="flex items-center space-x-3">
-            <h3 className="text-xl font-bold text-gray-900">Work Inquiries</h3>
-            <svg
-              className="w-5 h-5 text-gray-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
+        <div className="space-y-4 mt-14">
+          <div className="flex-col items-center space-x-3">
+            <h2 className="text-[25px] font-bold">
+              <strong>Work Inquiries</strong>
+            </h2>
+            <h2 className="text-[25px] font-extrabold">
+              <strong>↓</strong>
+            </h2>
+            <p className="text-[19px]">
+              Feel free to drop a <strong>message</strong> via my{" "}
+              <strong>Dribbble inbox</strong> - I'd love to learn more about{" "}
+              <br />
+              your <strong>project</strong> and explore ways we can{" "}
+              <strong>collaborate</strong>.
+            </p>
           </div>
-          <p className="text-gray-700 leading-relaxed">
-            Feel free to drop a{" "}
-            <span className="font-semibold">message via my Dribbble inbox</span>{" "}
-            - I'd love to learn more about your project and explore ways we can{" "}
-            <span className="font-semibold">collaborate</span>.
-          </p>
         </div>
       </div>
     </div>

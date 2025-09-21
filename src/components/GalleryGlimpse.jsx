@@ -87,6 +87,9 @@ const GalleryGlimpse = () => {
 
   return (
     <div className="w-full max-w-5xl mx-auto px-4">
+      <p className="text-[25px] font-bold text-center my-14">
+        Gallery Glimpse✨
+      </p>
       {/* Main Image Display */}
       <div className="relative mb-4">
         <div className="overflow-hidden rounded-lg shadow-lg">
