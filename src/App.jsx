@@ -7,7 +7,7 @@ import GalleryGlimpse from "./components/GalleryGlimpse";
 import FullLandingPageView from "./components/FullLandingPageView";
 import WorkEnquiry from "./components/WorkEnquiry";
 import AfterWorkEnquiry from "./components/AfterWorkEnquiry";
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -19,6 +19,7 @@ function App() {
       <FullLandingPageView />
       <WorkEnquiry />
       <AfterWorkEnquiry />
+      <Footer />
     </>
   );
 }
