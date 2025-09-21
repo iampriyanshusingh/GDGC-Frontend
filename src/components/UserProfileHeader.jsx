@@ -71,11 +71,11 @@ const UserProfileHeader = () => {
 
           {/* Right Side: Action Buttons */}
           <div className="flex items-center space-x-3 mt-4 sm:mt-0 ml-64">
-            <button className="p-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+            <button className="p-2 border border-gray-300 rounded-full hover:bg-red-400 transition-colors">
               <span className="sr-only">Like</span>
               <HeartIcon />
             </button>
-            <button className="p-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+            <button className="p-2 border border-gray-300 rounded-full hover:bg-blue-400 transition-colors">
               <span className="sr-only">Bookmark</span>
               <BookmarkIcon />
             </button>

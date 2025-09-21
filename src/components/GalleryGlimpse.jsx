@@ -92,7 +92,7 @@ const GalleryGlimpse = () => {
   const activeImage = imageData[activeIndex];
 
   return (
-    <div className="w-full max-w-5xl mx-auto px-4">
+    <div className="w-full max-w-5xl mx-auto">
       <p className="text-[25px] font-bold text-center my-14">
         Gallery Glimpse✨
       </p>
