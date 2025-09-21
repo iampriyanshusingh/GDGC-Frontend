@@ -1,10 +1,7 @@
-import React from "react";
-
 const Header = () => {
   return (
     <header className="bg-white px-10 py-4 sticky top-0 z-50">
       <div className="flex items-center">
-        {/* Logo */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="210"
@@ -22,7 +19,6 @@ const Header = () => {
           ></path>
         </svg>
 
-        {/* Search Bar */}
         <div className="flex items-center bg-gray-100 rounded-full pr-2">
           <input
             type="text"
@@ -36,7 +32,6 @@ const Header = () => {
               <option>Designers</option>
             </select>
 
-            {/* Chevron SVG positioned absolutely */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4 text-gray-500 absolute right-2 pointer-events-none"
@@ -71,7 +66,6 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Navigation Links */}
         <nav className="hidden md:flex items-center ml-12 space-x-7 whitespace-nowrap text-base">
           <a href="#" className="text-black hover:text-pink-500 font-semibold">
             Explore
@@ -88,7 +82,6 @@ const Header = () => {
           </a>
         </nav>
 
-        {/* User Actions */}
         <div className="flex items-center ml-72 space-x-4">
           <a href="#" className="text-baee font-semibold text-black">
             Sign up
