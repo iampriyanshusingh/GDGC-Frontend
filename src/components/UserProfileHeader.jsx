@@ -1,8 +1,4 @@
-import React from "react";
 import logo from "../assets/logo.webp";
-
-// --- SVG Icons ---
-// Using inline SVGs is a common practice in React to avoid extra dependencies or file loading.
 
 const HeartIcon = () => (
   <svg
@@ -38,16 +34,13 @@ const BookmarkIcon = () => (
   </svg>
 );
 
-// --- Main Component ---
 const UserProfileHeader = () => {
   return (
     <div className="bg-white font-sans sticky top-18 z-40">
       <div className="container mx-auto p-2 sm:p-6">
         <div className="flex flex-col sm:flex-row ml-48">
-          {/* Left Side: User Info */}
           <div className="flex items-center space-x-4">
             <img
-              // You can replace this placeholder with the actual user photo
               src={logo}
               alt="Jahed"
               className="h-14 w-14 rounded-full object-cover border-2 border-gray-200"
@@ -69,7 +62,6 @@ const UserProfileHeader = () => {
             </div>
           </div>
 
-          {/* Right Side: Action Buttons */}
           <div className="flex items-center space-x-3 mt-4 sm:mt-0 ml-64">
             <button className="p-2 border border-gray-300 rounded-full hover:bg-red-400 transition-colors">
               <span className="sr-only">Like</span>
@@ -89,5 +81,4 @@ const UserProfileHeader = () => {
   );
 };
 
-// Default export for use in other parts of a React application
 export default UserProfileHeader;
