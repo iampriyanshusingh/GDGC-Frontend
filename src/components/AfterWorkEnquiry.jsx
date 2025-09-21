@@ -28,9 +28,6 @@ const AfterWorkEnquiry = () => {
   ];
   return (
     <div className="flex flex-col items-center p-8 font-sans">
-      {/* New Section */}
-
-      {/* Services Section */}
       <div className="w-full max-w-7xl mt-8">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-base font-bold text-gray-800">
@@ -51,11 +48,9 @@ const AfterWorkEnquiry = () => {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              {/* Placeholder for the image */}
               <div className="h-full w-72 flex items-center justify-center relative rounded-lg bg-cover">
                 <img src={service.url} />
 
-                {/* Hover overlay - only show icons, no text */}
                 <div
                   className={`absolute inset-0 flex items-center justify-center transition-all duration-300 ${
                     hoveredIndex === index ? "opacity-100" : "opacity-0"
@@ -95,14 +90,11 @@ const AfterWorkEnquiry = () => {
               onMouseEnter={() => setHoveredIndex1(index)}
               onMouseLeave={() => setHoveredIndex1(null)}
             >
-              {/* Placeholder for the image */}
               <div className="h-full w-72 flex items-center justify-center relative rounded-lg bg-cover">
                 <img src={services2.url} />
               </div>
 
               <div className="text-black bg-amber-900">hello</div>
-
-              {/* Hover overlay - only show icons, no text */}
               <div
                 className={`absolute inset-0 flex items-center justify-center transition-all duration-300 ${
                   hoveredIndex1 === index ? "opacity-100" : "opacity-0"
