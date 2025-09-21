@@ -2,62 +2,62 @@ import React from "react";
 import { FiArrowDown } from "react-icons/fi";
 import { BsArrowRight } from "react-icons/bs";
 import work from "../assets/work.webp";
+import logo1 from "../assets/logo1.webp";
 
 const WorkEnquiry = () => {
   return (
-    <div className="bg-white min-h-screen flex flex-col items-center p-8 font-sans">
-      <div className="bg-white p-10 max-w-xl w-full text-center">
+    <div className="bg-white flex flex-col items-center font-sans">
+      <div className="bg-white w-full">
         {/* Work Inquiries Section */}
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-800 flex justify-center items-center">
-            Work Inquiries
-            <FiArrowDown className="ml-2 text-purple-700" />
-          </h1>
-          <p className="mt-4 text-gray-600 leading-relaxed">
-            Feel free to drop a <span className="font-semibold">message</span>{" "}
-            via my{" "}
-            <span className="font-bold text-purple-700">Dribbble inbox</span> -
-            I'd love to learn more about your{" "}
-            <span className="font-semibold">project</span> and explore ways we
-            can <span className="font-semibold">collaborate</span>.
-          </p>
+        <div className=" mt-14">
+          <div className="flex-col items-center space-x-3 ml-96">
+            <h2 className="text-[25px] font-bold">
+              <strong>Work Inquiries</strong>
+            </h2>
+            <h2 className="text-[25px] font-extrabold">
+              <strong>↓</strong>
+            </h2>
+            <p className="text-[20px]">
+              Feel free to drop a <strong>message</strong> via my{" "}
+              <strong>Dribbble inbox</strong> - I'd love to learn more about{" "}
+              <br />
+              your <strong>project</strong> and explore ways we can{" "}
+              <strong>collaborate</strong>.
+            </p>
+          </div>
         </div>
 
         {/* My Services Section */}
         <div>
-          <h2 className="text-2xl font-bold text-gray-800 flex justify-center items-center">
+          <h2 className="text-3xl font-extrabold text-gray-800 ml-96 mt-10">
             My Services - View
             <span className="text-orange-500 ml-2 animate-pulse">⚡️</span>
           </h2>
         </div>
-        <img src={work} className="mt-10" />
-        <div className="bg-white p-10 max-w-xl w-full text-center mt-8">
-          <div className="flex items-center w-full my-8">
+        <img
+          src={work}
+          className="mt-20 ml-96 h-[376px] w-[752px] rounded-lg"
+        />
+        <div className="bg-white p-10 w-full text-center">
+          <div className="flex items-center w-full my-8 mt-28">
             <div className="flex-grow h-px bg-gray-300"></div>
+
             <div className="flex justify-center items-center mx-4">
-              <div className="h-16 w-16 bg-yellow-400 rounded-full flex items-center justify-center">
-                {/* Your logo will go here */}
+              <div className="h-20 w-20 bg-yellow-400 rounded-full flex items-center justify-center">
+                <img src={logo1} className="rounded-full" />
               </div>
             </div>
+
             <div className="flex-grow h-px bg-gray-300"></div>
           </div>
-          <h3 className="text-2xl font-bold text-gray-800 mb-2">
+
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">
             Trexa Lab Agency
           </h3>
-          <p className="text-gray-600 flex items-center justify-center space-x-2">
-            <span className="text-pink-500">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 inline"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V8h2v4zm4 4h-2v-2h2v2zm0-4h-2V8h2v4z" />
-              </svg>
-            </span>
-            <span>We're open to new projects – Let's discuss!</span>
+          <p className="text-gray-600 flex items-center justify-center space-x-2 text-sm">
+            <span>🧰 We’re open to new projects — Let’s discuss!</span>
           </p>
-          <button className="mt-6 px-6 py-3 bg-black text-white font-semibold rounded-full hover:bg-gray-800 transition-colors duration-300">
+          <button className="mt-5 px-5 py-2 bg-black text-white font-medium rounded-full hover:bg-gray-800 transition-colors duration-300">
             Get in touch
           </button>
         </div>
