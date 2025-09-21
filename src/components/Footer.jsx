@@ -1,12 +1,8 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <footer>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Main Footer Content */}
         <div className="py-12 flex justify-between">
-          {/* Left Section - Logo */}
           <div className="lg:col-span-1">
             <div className="flex items-center">
               <svg
@@ -28,7 +24,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Center Section - Navigation Links */}
           <div className="lg:col-span-1">
             <nav className="flex justify-center lg:justify-center gap-12 text-sm font-semibold">
               <a
@@ -82,7 +77,6 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Right Section - Social Media Icons */}
           <div className="lg:col-span-1">
             <div className="flex justify-center lg:justify-end space-x-4">
               <a
@@ -138,10 +132,8 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Footer */}
       <div className="py-6  border-gray-200">
         <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0 ml-36">
-          {/* Left - Copyright */}
           <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-gray-500">
             <span>© 2025 Dribbble</span>
             <div className="flex space-x-6">
@@ -157,7 +149,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Right - Additional Links */}
           <div className="flex flex-col sm:flex-row items-center space-y-7 sm:space-y-0 sm:space-x-6 text-sm text-gray-500 mr-36">
             <div className="flex space-x-6">
               <a href="#" className="hover:text-gray-900 transition-colors">
