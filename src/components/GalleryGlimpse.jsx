@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import photo1 from "../assets/photo1.webp";
 import photo2 from "../assets/photo2.webp";
 import photo3 from "../assets/photo3.webp";
@@ -38,7 +38,6 @@ const imageData = [
   },
 ];
 
-// --- Arrow SVG Icons ---
 const ChevronLeftIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +72,6 @@ const ChevronRightIcon = () => (
   </svg>
 );
 
-// --- Main Image Gallery Component ---
 const GalleryGlimpse = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -96,7 +94,7 @@ const GalleryGlimpse = () => {
       <p className="text-[25px] font-bold text-center my-14">
         Gallery Glimpse✨
       </p>
-      {/* Main Image Display */}
+
       <div className="relative mb-4 shadow-xl">
         <div className="overflow-hidden rounded-lg shadow-lg">
           <img
@@ -107,7 +105,6 @@ const GalleryGlimpse = () => {
           />
         </div>
 
-        {/* Navigation Buttons */}
         <button
           onClick={handlePrev}
           className="absolute top-1/2 left-3 transform -translate-y-1/2 bg-white/60 hover:bg-white/90 p-1 rounded-full shadow-md transition-all duration-300"
@@ -123,8 +120,6 @@ const GalleryGlimpse = () => {
           <ChevronRightIcon />
         </button>
       </div>
-
-      {/* Thumbnails */}
       <div className="flex space-x-2 p-2">
         {imageData.map((image, index) => (
           <button
