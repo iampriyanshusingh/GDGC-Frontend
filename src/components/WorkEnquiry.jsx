@@ -1,6 +1,3 @@
-import React from "react";
-import { FiArrowDown } from "react-icons/fi";
-import { BsArrowRight } from "react-icons/bs";
 import work from "../assets/work.webp";
 import logo1 from "../assets/logo1.webp";
 
@@ -8,7 +5,6 @@ const WorkEnquiry = () => {
   return (
     <div className="bg-white flex flex-col items-center font-sans">
       <div className="bg-white w-full">
-        {/* Work Inquiries Section */}
         <div className=" mt-14">
           <div className="flex-col items-center space-x-3 ml-96">
             <h2 className="text-[25px] font-bold">
@@ -27,7 +23,6 @@ const WorkEnquiry = () => {
           </div>
         </div>
 
-        {/* My Services Section */}
         <div>
           <h2 className="text-3xl font-extrabold text-gray-800 ml-96 mt-10">
             My Services - View
